@@ -479,7 +479,10 @@ pre {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -15px; 
+  word-wrap: break-word; /* Ensure long words wrap */
+  margin: 0 auto;
+}
 
 .no-gutters {
   margin-right: 0;
@@ -9213,7 +9216,19 @@ textarea.form-control {
 .big-4 {
   font-size: 42px;
   margin: 0 auto;
-  transform: scaleX(1.2); /* Stretch the text by 1.2 times */ }
+  transform: scaleX(1.2); /* Stretch the text by 1.2 times */ 
+  text-align: center; /* Center align the text */
+  word-wrap: break-word; /* Ensure long words wrap */
+  margin: 0 auto; /* Center the element horizontally */
+  }
+
+  /* .underline {
+    width: 50%;
+    height: 2px;
+    background-color: #000; 
+    margin: 10px auto;  
+  } */
+
 
 .heading-section {
   position: relative; }
